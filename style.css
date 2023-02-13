@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aboreto';
+}
+
+.first-page{
+    background: url(midnight.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px 10%;
+    position: relative;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h2{
+    color: skyblue;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px white;
+}
+
+.header h2 span{
+    color: blue;
+}
+.bar{
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    opacity: 0.5;
+    position: relative;
+}
+
+.bar:hover{
+    opacity: 1;
+}
+
+.bar p{
+    width: 100%;
+    background-color: white;
+    height: 3px;
+    border-radius: 4px;
+}
+.info{
+    display: none;
+}
+
+.info li{
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.info li a{
+    color: white;
+    text-decoration: none;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.content p{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.content button{
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.content button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 800px){
+    
+.header h2{
+    font-size: 2.5rem;
+    }
+    .bar{
+        display: none;
+    }
+    .info{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .content p{
+        font-size: 2.5rem;
+    }
+}
+
+.second-page{
+    width: 100%;
+    min-height: 100vh;
+     background: linear-gradient(rgb(3, 61, 88),rgb(27,56, 90));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page p{
+    color: white;
+    margin-top: 20px;
+    padding: 0 10%;
+
+}
+.second-page h2{
+    color: white;
+    padding: 20px 10%; 
+}
+.container-2{    
+    position: relative;
+    overflow: hidden;
+    flex: 3;
+
+}
+#turtle{
+    position: absolute;
+    right: -80%;
+    bottom: 10%;
+    animation-name: turtle;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    max-width: 80%;
+    height: 80%;
+}
+@keyframes turtle{
+    0%{
+        right: -80%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+
+.third-page{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(27, 56, 90),rgb(7, 27, 94));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-page p{
+    color: white;
+    margin-top: 20px;
+    padding: 0 10%;
+
+}
+.third-page h2{
+    color: white;
+    padding: 20px 10%; 
+}
+
+#glowfish{
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+
+    animation: glowfish 15s infinite;
+    animation-timing-function: linear;
+    z-index: 2;
+}
+
+.container-3{    
+    position: relative;
+    overflow: hidden;
+    flex: 3;
+
+}
+
+#glowfish-2{
+    width: 20%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+    animation: fish 15s infinite;
+    animation-timing-function:linear;
+    z-index: 2;
+}
+
+#angler{
+    position: absolute;
+    right: -50%;
+    top: 0;
+    width: 70%;
+    height: auto;
+
+    animation: angler 15s infinite;
+    animation-timing-function:linear;
+    z-index: 3;
+}
+
+@keyframes glowfish {
+    0%{
+        right: -50%;
+    }
+
+    100%{
+        right: 150%;
+    }
+}
+
+@keyframes fish{
+    0%{
+        right: -100%;
+    }
+
+    100%{
+        right: 150%;
+        
+    }
+}
+@keyframes angler{
+    0%{
+        right: -200%;
+    }
+    100%{
+        right: 150%;
+    }
+}
+
+.fourth-page{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(7, 27, 94),rgb(0, 15, 65),rgb(1, 17, 68));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.fourth-page p{
+    color: white;
+    margin-top: 20px;
+    padding: 0 10%;
+
+}
+.fourth-page h2{
+    color: white;
+    padding: 20px 10%; 
+}
+
+.container-4{    
+    position: relative;
+    overflow: hidden;
+    flex: 3;
+
+}
+
+#jelly1, #jelly2, #jelly3, #jelly4{
+    position: absolute;
+    width: 20%;
+
+
+}
+#jelly1{
+    bottom: -50%;
+    animation: jelly 15s infinite linear;
+    
+    
+}
+#jelly2{
+    bottom: -80%;
+    right: 10%;
+    animation: jelly 17s infinite linear;
+
+}
+#jelly3{
+    bottom: -20%;
+    left: 30%;
+    animation: jelly 20s infinite linear;
+
+}
+#jelly4{
+    bottom: -100%;
+    left:  50%;
+    animation: jelly 18s infinite linear;
+
+}
+
+@keyframes jelly{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-800px);
+    }
+}
+
+
+.fifth-page{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(1, 17, 68),rgb(0, 9, 39),rgb(0, 0, 0));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.fifth-page p{
+    color: white;
+    margin-top: 20px;
+    padding: 0 10%;
+
+}
+.fifth-page h2{
+    color: white;
+    padding: 20px 10%; 
+}
+
+.container-5{    
+    position: relative;
+    overflow: hidden;
+    flex: 3;
+
+}
+#fishh{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    animation: fishh 3s infinite linear;
+
+}
+
+#jaw{
+    position: absolute;
+    bottom: -180%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    animation: jaw 3s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes jaw{
+    0%{
+        bottom: -180%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+
+
+
+.information{
+    background-color: rgb(1, 4, 19);
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.information p{
+    font-size: 0.7rem;
+    color: white;
+    opacity: 0.8;
+}
+
+
+@media (max-height: 600px){
+    .container-2{
+        display: none;
+    }
+    .container-3{
+        display: none;
+    }
+    .container-4{
+        display: none;
+    }
+    .container-5{
+        display: none;
+    }
+
+}
