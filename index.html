@@ -15,13 +15,13 @@
         <header class="header">
             <h2>OCEAN<span>FLOOR</span></h2>
 
-            <span class="bar">
+            <span id="bar" class="bar">
                 <p></p>
                 <p></p>
                 <p></p>
             </span>
 
-            <ul class="info">
+            <ul id="info" class="info">
                 <li><a href="#">Home</a></li>
                 <li><a href="#explore">Explore</a></li>
                 <li><a href="#information">Information</a></li>
@@ -86,5 +86,18 @@
             <p>Credits for the owner of the images</p>
     </div>
     </section>
+
+    <script>
+
+        const toggle = document.getElementById('bar');
+        const info = document.getElementById('info');
+
+        toggle.addEventListener('click', function(){
+
+            info.classList.toggle('active');
+
+        })
+
+    </script>
 </body>
 </html>
